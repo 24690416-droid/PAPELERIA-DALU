@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Productos | Papelería</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+    <header class="encabezado">
+        <div style="text-align: center;">
+            <h1>📚 Nuestros Productos </h1>
+            <p>  Encuentra una gran variedad de productos escolares,
+            de oficina y materiales para tus proyectos.</p>
+        </div>
+    </header>
+        <div id="menu"></div>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- CONTENIDO -->
+
+        <main>
+
+            <section class="productos">
+
+
+
+                <!-- PRODUCTOS -->
+
+                <div class="lista-productos">
+
+
+                    <!-- TIJERAS -->
+
+                    <article class="producto">
+
+                        <img src=tijeras.jpg
+                             alt="tijeras">
+
+                        <h3>Tijeras</h3>
+
+                        <p>
+                            Tijeras de diferentes tamaños.
+                        </p>
+
+                        <strong>
+                            Desde $30
+                        </strong>
+
+                    </article>
+
+
+                    <!-- STICKERS -->
+
+                    <article class="producto">
+
+                        <img src=stickers.jpg
+                             alt="stickers">
+
+                        <h3>Stickers</h3>
+
+                        <p>
+                            Stickers para decorar libretas, 
+                            personalizar tus objetos
+                        </p>
+
+                        <strong>
+                            Desde $50
+                        </strong>
+
+                    </article>
+
+
+                    <!-- PLASTILINA -->
+
+                    <article class="producto">
+
+                        <img src=playdoh.jpg
+                             alt="Colores">
+
+                        <h3>Plastilina</h3>
+
+                        <p>
+                            Plastilina de colores para moldear
+                        </p>
+
+                        <strong>
+                            Desde $30
+                        </strong>
+
+                    </article>
+
+
+                    <!-- MARCADORES -->
+
+                    <article class="producto">
+
+                        <img src=marcadores.jpg
+                             alt="marcadores">
+
+                        <h3>Marcadores</h3>
+
+                        <p>
+                            Marcadores de diferentes colores
+                            para escribir y tomar apuntes.
+                        </p>
+
+                        <strong>
+                            Desde $100
+                        </strong>
+
+                    </article>
+
+
+                    <!-- GEOMETRÍA -->
+
+                    <article class="producto">
+
+                        <img src=reglas.jpg
+                             alt="Reglas y material de geometría">
+
+                        <h3>Geometría</h3>
+
+                        <p>
+                            Reglas, escuadras, transportadores
+                            y juegos de geometría.
+                        </p>
+
+                        <strong>
+                            Desde $20
+                        </strong>
+
+                    </article>
+
+
+                    <!-- HOJAS -->
+
+                    <article class="producto">
+
+                        <img src=hojas.jpg
+                             alt="Hojas de papel">
+
+                        <h3>Hojas</h3>
+
+                        <p>
+                            Hojas blancas y diferentes tipos
+                            de papel para tareas e impresiones.
+                        </p>
+
+                        <strong>
+                            Desde $2
+                        </strong>
+
+                    </article>
+
+
+                    <!-- PEGAMENTO -->
+
+                    <article class="producto">
+
+                        <img src=pegamento.jpg
+                             alt="Pegamento">
+
+                        <h3>Pegamento</h3>
+
+                        <p>
+                            Pegamento líquido y adhesivos
+                            para trabajos y manualidades.
+                        </p>
+
+                        <strong>
+                            Desde $12
+                        </strong>
+
+                    </article>
+
+
+                    <!-- ACUARELA -->
+
+                    <article class="producto">
+
+                        <img src=acuarela.jpg
+                             alt="acuarela">
+
+                        <h3>Acuarelas</h3>
+
+                        <p>
+                            Acuarelas para pintar tus manualidades 
+                            y crear lindos dibujos.
+                        </p>
+
+                        <strong>
+                            Desde $15
+                        </strong>
+
+                    </article>
+
+
+                </div>
+             <div style="text-align: center; margin: 30px 0;">
+    <a href="index.html" class="btn-regresar">⬅️ Regresar al inicio</a>
+</div>
+
+            </section>
+
+        </main>
+
+
+        <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>Papelería Dalu</h3>
+
+            <p>
+                Calidad, servicio y productos para todos.
+            </p>
+
+            <hr>
+
+            <p>
+                © 2026 Papelería Dalu
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    </div>
+    <script>
+fetch("menu.html")
+.then(respuesta => respuesta.text())
+.then(datos => {
+    document.getElementById("menu").innerHTML = datos;
+});
+</script>
+
+</body>
+
+</html>

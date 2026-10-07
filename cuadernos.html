@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cuadernos | Papelería DALU </title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div style="text-align: center;">
+            <h1>📚 Papelería Dalu </h1>
+            <p>Cuadernos para todos tus trabajos escolares</p>
+        </div>
+    </header>
+
+    <!-- MENÚ -->
+    <div id="menu"></div>
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <section class="productos">
+
+            <h2>📓 Tipos de Cuadernos</h2>
+
+            <p>
+                Encuentra diferentes tipos de cuadernos para tus clases,
+                apuntes, tareas y proyectos escolares.
+            </p>
+
+            <div class="lista-productos">
+
+                <!-- CUADERNO ITALIANO -->
+                <article class="producto">
+
+                    <img src="img/italiano.jpg" alt="Cuaderno italiano">
+
+                    <h3>Cuaderno Italiano</h3>
+
+                    <p>
+                        Cuaderno de tamaño italiano, práctico para
+                        diferentes materias y actividades escolares.
+                    </p>
+
+                    <strong>Desde $35</strong>
+
+                </article>
+
+
+                <!-- CUADERNO CHICO -->
+                <article class="producto">
+
+                    <img src="img/pequeña.jpg" alt="Cuaderno chico">
+
+                    <h3>Cuaderno Chico</h3>
+
+                    <p>
+                        Cuaderno pequeño ideal para apuntes, notas,
+                        tareas y actividades escolares.
+                    </p>
+
+                    <strong>Desde $30</strong>
+
+                </article>
+
+
+                <!-- CUADERNO RAYA -->
+                <article class="producto">
+
+                    <img src="img/raya.jpg" alt="Cuaderno de raya">
+
+                    <h3>Cuaderno de Raya</h3>
+
+                    <p>
+                        Ideal para materias donde necesitas escribir
+                        apuntes, ejercicios y trabajos.
+                    </p>
+
+                    <strong>Desde $35</strong>
+
+                </article>
+
+
+                <!-- CUADERNO DOBLE RAYA -->
+                <article class="producto">
+
+                    <img src="img/doble raya.jpg" alt="Cuaderno de doble raya">
+
+                    <h3>Cuaderno de Doble Raya</h3>
+
+                    <p>
+                        Perfecto para ejercicios de escritura,
+                        caligrafía y actividades escolares.
+                    </p>
+
+                    <strong>Desde $35</strong>
+
+                </article>
+
+
+                <!-- CUADERNO CUADRO -->
+                <article class="producto">
+
+                    <img src="img/cuadro.jpg" alt="Cuaderno de cuadro">
+
+                    <h3>Cuaderno de Cuadro</h3>
+
+                    <p>
+                        Recomendado para matemáticas, operaciones,
+                        gráficas y diferentes ejercicios.
+                    </p>
+
+                    <strong>Desde $35</strong>
+
+                </article>
+
+            </div>
+
+
+            <!-- BOTÓN REGRESAR -->
+
+            <div style="text-align: center; margin: 35px 0;">
+
+                <a href="index.html" class="btn-regresar">
+                    ⬅️ Regresar al inicio
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>Papelería Dalu</h3>
+
+            <p>
+                Calidad, servicio y productos para todos.
+            </p>
+
+            <hr>
+
+            <p>
+                © 2026 Papelería Dalu
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CARGAR MENÚ -->
+
+    <script>
+
+        fetch("menu.html")
+
+            .then(respuesta => respuesta.text())
+
+            .then(datos => {
+
+                document.getElementById("menu").innerHTML = datos;
+
+            })
+
+            .catch(error => {
+
+                console.error("Error al cargar el menú:", error);
+
+            });
+
+    </script>
+
+</body>
+
+</html>

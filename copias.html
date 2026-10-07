@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Copias | Papelería Dalu</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <h1>📄 Papelería Dalu</h1>
+        <p>Servicio de copias e impresiones</p>
+    </header>
+
+    <!-- MENÚ -->
+    <div id="menu"></div>
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <section class="copias">
+
+            <h2>📄 Servicio de Copias</h2>
+
+            <p class="descripcion">
+                En Papelería Dalu contamos con servicio de copias
+                para tareas, documentos, trabajos escolares y más.
+            </p>
+
+            <div class="lista-copias">
+
+                <!-- COPIA BLANCO Y NEGRO -->
+                <article class="copia">
+
+                    <div class="icono">🖨️</div>
+
+                    <h3>Copia Blanco y Negro</h3>
+
+                    <p>
+                        Copias de documentos, tareas, libros,
+                        apuntes y trabajos escolares.
+                    </p>
+
+                    <strong>$1.00 por hoja</strong>
+
+                </article>
+
+
+                <!-- COPIA A COLOR -->
+                <article class="copia">
+
+                    <div class="icono">🎨</div>
+
+                    <h3>Copia a Color</h3>
+
+                    <p>
+                        Copias a color ideales para trabajos,
+                        imágenes, proyectos y presentaciones.
+                    </p>
+
+                    <strong>Desde $5.00</strong>
+
+                </article>
+
+
+                <!-- COPIA DOBLE CARA -->
+                <article class="copia">
+
+                    <div class="icono">📑</div>
+
+                    <h3>Copia Doble Cara</h3>
+
+                    <p>
+                        Aprovecha ambas caras de la hoja para
+                        tus documentos y trabajos escolares.
+                    </p>
+
+                    <strong>Desde $2.00</strong>
+
+                </article>
+
+
+                <!-- DOCUMENTOS -->
+                <article class="copia">
+
+                    <div class="icono">📃</div>
+
+                    <h3>Copias de Documentos</h3>
+
+                    <p>
+                        Realizamos copias de documentos personales,
+                        escolares y administrativos.
+                    </p>
+
+                    <strong>Desde $1.00</strong>
+
+                </article>
+
+            </div>
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="informacion">
+
+                <h2>📌 Información</h2>
+
+                <p>
+                    Puedes traer tus documentos en físico o
+                    enviarlos desde tu dispositivo para realizar
+                    tus copias.
+                </p>
+
+                <p>
+                    <strong>📍 Papelería Dalu</strong>
+                </p>
+
+            </div>
+
+
+            <!-- BOTÓN REGRESAR -->
+
+            <div class="regresar">
+
+                <a href="index.html" class="btn-regresar">
+                    ⬅️ Regresar al inicio
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>Papelería Dalu</h3>
+
+            <p>
+                Calidad, servicio y productos para todos.
+            </p>
+
+            <hr>
+
+            <p>
+                © 2026 Papelería Dalu
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- CARGAR MENÚ -->
+
+    <script>
+
+        fetch("menu.html")
+            .then(respuesta => respuesta.text())
+            .then(datos => {
+
+                document.getElementById("menu").innerHTML = datos;
+
+            })
+            .catch(error => {
+
+                console.error("Error al cargar el menú:", error);
+
+            });
+
+    </script>
+
+</body>
+
+</html>

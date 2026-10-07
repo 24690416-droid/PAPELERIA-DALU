@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Servicios | Papelería</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div style="text-align: center;">
+            <h1>📚 Papelería Dalu </h1>
+            <p>servicios para tus necesidades </p>
+        </div>
+    </header>
+        <div id="menu"></div>
+
+<body>
+
+    <div class="contenedor">
+
+        <!-- CONTENIDO -->
+        <main>
+
+            <section class="servicios">
+
+                <h2>🛠️ Nuestros Servicios</h2>
+
+                <p>
+                    En nuestra papelería contamos con diferentes servicios
+                    para tus trabajos escolares, documentos y proyectos.
+                </p>
+
+
+
+                <!-- IMPRESIONES Y COPIAS -->
+
+                <div class="categoria-servicio">
+
+                    <h2>🖨️ Impresiones y Copias</h2>
+
+                    <p>
+                        Realizamos impresiones y copias de documentos,
+                        tareas, trabajos escolares y diferentes tipos
+                        de archivos.
+                    </p>
+
+                    <div class="servicios-grid">
+
+                        <article class="servicio">
+
+                            <div class="icono-servicio">
+                                🖨️
+                            </div>
+
+                            <h3>Impresiones</h3>
+
+                            <p>
+                                Impresiones de documentos, tareas,
+                                proyectos y trabajos escolares.
+                            </p>
+
+                            <strong>
+                                Blanco y negro / Color
+                            </strong>
+
+                        </article>
+
+
+                        <article class="servicio">
+
+                            <div class="icono-servicio">
+                                📄
+                            </div>
+
+                            <h3>Copias</h3>
+
+                            <p>
+                                Copias de documentos, libros,
+                                apuntes y materiales escolares.
+                            </p>
+
+                            <strong>
+                                Blanco y negro / Color
+                            </strong>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ENGARGOLADOS Y ENMICADOS -->
+
+                <div class="categoria-servicio">
+
+                    <h2>📚 Engargolados y Enmicados</h2>
+
+                    <p>
+                        Protege y presenta tus trabajos de una manera
+                        más organizada y profesional.
+                    </p>
+
+                    <div class="servicios-grid">
+
+                        <article class="servicio">
+
+                            <div class="icono-servicio">
+                                📚
+                            </div>
+
+                            <h3>Engargolados</h3>
+
+                            <p>
+                                Engargolado de trabajos escolares,
+                                proyectos, manuales y documentos.
+                            </p>
+
+                            <strong>
+                                Diferentes tamaños
+                            </strong>
+
+                        </article>
+
+
+                        <article class="servicio">
+
+                            <div class="icono-servicio">
+                                📑
+                            </div>
+
+                            <h3>Enmicados</h3>
+
+                            <p>
+                                Enmicado de documentos, credenciales,
+                                horarios, identificaciones y trabajos.
+                            </p>
+
+                            <strong>
+                                Diferentes tamaños
+                            </strong>
+
+                        </article>
+
+                    </div>
+
+                </div>
+            <div style="text-align: center; margin: 30px 0;">
+    <a href="index.html" class="btn-regresar">⬅️ Regresar al inicio</a>
+</div>
+
+
+            </section>
+
+        </main>
+
+
+        <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>Papelería Dalu</h3>
+
+            <p>
+                Calidad, servicio y productos para todos.
+            </p>
+
+            <hr>
+
+            <p>
+                © 2026 Papelería Dalu
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    </div>
+    <script>
+fetch("menu.html")
+.then(respuesta => respuesta.text())
+.then(datos => {
+    document.getElementById("menu").innerHTML = datos;
+});
+</script>
+
+</body>
+
+</html>

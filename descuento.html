@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Descuentos | Papelería DALU</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <div style="text-align: center;">
+
+            <h1>🎉 Papelería Dalu</h1>
+
+            <p>Descuentos y promociones especiales</p>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENÚ -->
+    <div id="menu"></div>
+
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <section class="seccion-descuentos">
+
+            <h2>💙 Descuentos Especiales</h2>
+
+            <p class="descripcion-descuentos">
+                ¡Aprovecha nuestros descuentos! 
+                Encuentra productos participantes y disfruta nuestras ofertas.
+            </p>
+
+
+            <!-- LISTA DE DESCUENTOS -->
+            <div class="lista-descuentos">
+
+
+                <!-- LIBRETAS ITALIANAS -->
+                <article class="descuento">
+
+                    <img src="img/italiano.jpg" alt="Libretas italianas">
+
+                    <div class="contenido-descuento">
+
+                        <span class="etiqueta-descuento">2x1</span>
+
+                        <h3>📓 Libretas Italianas</h3>
+
+                        <p>
+                            Lleva dos libretas italianas participantes
+                            y paga solamente una.
+                        </p>
+
+                        <strong>
+                            ¡Llévate 2 y paga 1!
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MARCADORES -->
+                <article class="descuento">
+
+                    <img src="marcadores.jpg" alt="Marcadores">
+
+                    <div class="contenido-descuento">
+
+                        <span class="etiqueta-descuento">2x1</span>
+
+                        <h3>🖍️ Marcadores</h3>
+
+                        <p>
+                            Aprovecha esta oferta especial en marcadores
+                            para tus trabajos y proyectos.
+                        </p>
+
+                        <strong>
+                            ¡Llévate 2 y paga 1!
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- REGLAS -->
+                <article class="descuento">
+
+                    <img src="reglas.jpg" alt="Reglas">
+
+                    <div class="contenido-descuento">
+
+                        <span class="etiqueta-descuento">2x1</span>
+
+                        <h3>📏 Reglas</h3>
+
+                        <p>
+                            Lleva dos reglas participantes
+                            y paga solamente una.
+                        </p>
+
+                        <strong>
+                            ¡Llévate 2 y paga 1!
+                        </strong>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- AVISO -->
+
+            <div class="aviso-descuentos">
+
+                <h3>⭐ ¡Aprovecha nuestros descuentos!</h3>
+
+                <p>
+                    Ofertas válidas hasta agotar existencias.
+                </p>
+
+                <p>
+                    Consulta los productos participantes en tienda.
+                </p>
+
+            </div>
+
+
+            <!-- BOTÓN REGRESAR -->
+
+            <div style="text-align: center; margin: 35px 0;">
+
+                <a href="index.html" class="btn-regresar">
+                    ⬅️ Regresar al inicio
+                </a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+
+        <div class="container text-center">
+
+            <h3>Papelería Dalu</h3>
+
+            <p>
+                Calidad, servicio y productos para todos.
+            </p>
+
+            <hr>
+
+            <p>
+                © 2026 Papelería Dalu
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- CARGAR MENÚ -->
+
+    <script>
+
+        fetch("menu.html")
+
+            .then(respuesta => respuesta.text())
+
+            .then(datos => {
+
+                document.getElementById("menu").innerHTML = datos;
+
+            })
+
+            .catch(error => {
+
+                console.error("Error al cargar el menú:", error);
+
+            });
+
+    </script>
+
+</body>
+
+</html>

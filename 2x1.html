@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Promociones 2x1 | Papelería Dalu</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div style="text-align: center;">
+            <h1>🎉 Papelería Dalu</h1>
+            <p>Promociones especiales 2x1</p>
+        </div>
+    </header>
+
+
+    <!-- MENÚ -->
+    <div id="menu"></div>
+
+
+    <!-- CONTENIDO -->
+    <main>
+
+        <section class="seccion-promos">
+
+            <h2>🔥 Promociones 2x1</h2>
+
+            <p class="descripcion-promos">
+                ¡Aprovecha nuestras promociones especiales!
+                Lleva dos productos participantes y paga solamente uno.
+            </p>
+
+
+            <div class="lista-promos">
+
+                <!-- TIJERAS -->
+                <article class="promo">
+
+                    <img src="tijeras.jpg" alt="Tijeras">
+
+                    <div class="contenido-promo">
+
+                        <span class="etiqueta-2x1">2x1</span>
+
+                        <h3>✂️ Tijeras</h3>
+
+                        <p>
+                            Llévate dos tijeras participantes
+                            y paga solamente una.
+                        </p>
+
+                        <strong>¡Llévate 2 y paga 1!</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ACUARELAS -->
+                <article class="promo">
+
+                    <img src="acuarela.jpg" alt="Acuarelas">
+
+                    <div class="contenido-promo">
+
+                        <span class="etiqueta-2x1">2x1</span>
+
+                        <h3>🎨 Acuarelas</h3>
+
+                        <p>
+                            Aprovecha nuestra promoción en
+                            acuarelas para tus trabajos y proyectos.
+                        </p>
+
+                        <strong>¡Llévate 2 y paga 1!</strong>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PEGAMENTO -->
+                <article class="promo">
+
+                    <img src="pegamento.jpg" alt="Pegamento">
+
+                    <div class="contenido-promo">
+
+                        <span class="etiqueta-2x1">2x1</span>
+
+                        <h3>🧴 Pegamento</h3>
+
+                        <p>
+                            Lleva dos pegamentos participantes
+                            y paga solamente uno.
+                        </p>
+
+                        <strong>¡Llévate 2 y paga 1!</strong>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- AVISO -->
+
+            <div class="aviso-promos">
+
+                <h3>⭐ ¡No te quedes sin la tuya!</h3>
+
+                <p>
+                    Promoción válida hasta agotar existencias.
+                </p>
+
+                <p>
+                    Consulta los productos participantes en tienda.
+                </p>
+
+            </div>
+
+
+            <!-- REGRESAR -->
+
+            <div style="text-align: center; margin: 35px 0;">
+
+                <a href="index.html" class="btn-regresar">
+                    ⬅️ Regresar al inicio
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="footer">
+
+        <div style="text-align: center;">
+
+            <p>
+                © 2026 Papelería Dalu | Todos los derechos reservados
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CARGAR MENÚ -->
+
+    <script>
+
+        fetch("menu.html")
+
+            .then(respuesta => respuesta.text())
+
+            .then(datos => {
+
+                document.getElementById("menu").innerHTML = datos;
+
+            })
+
+            .catch(error => {
+
+                console.error("Error al cargar el menú:", error);
+
+            });
+
+    </script>
+
+</body>
+
+</html>
